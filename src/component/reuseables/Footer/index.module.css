@@ -1,0 +1,17 @@
+.mainCont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialIcon{
+    display: flex;
+    gap: 20px;
+}
+.mainCont > div{
+    gap: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.mainCont p{
+    font-size: 18px;
+    font-weight: normal;
+}
