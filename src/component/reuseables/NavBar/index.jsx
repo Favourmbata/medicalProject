@@ -19,6 +19,7 @@ const Navbar = () => {
                 <p>Search</p>
                 <img src={logo} alt={"three lined image"}/>
             </div>
+
         </div>
     );
 };

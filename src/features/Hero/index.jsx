@@ -8,17 +8,19 @@ import {Content} from "./data";
 const Hero = () => {
     return (
         <div className={style.mainCont}>
-            <div>
+
+            <div className={style.imageContainer}>
                 <img src={heroImg} style={{width: "100%"}}/>
             </div>
+
             <div className={style.textDiv}>
-                <p className={style.textOne}>Dental Practice</p>
-                <p className={style.textTwo}>We provide the best
+                <p >Dental Practice</p>
+                <p >We provide the best
                     <span
                         style={{display: "block"}}>services out there
                     </span>
                 </p>
-                <div style={{display: "flex", flexDirection: "row", padding: "10px", gap: "20px"}}>
+                <div className={style.buttonsContainer}>
                     <Link to={"https://www.youtube.com/"}>
                         <FilledButton color={"#2E3192"} text={"View More"} textColor={"#FFF"}/>
                     </Link>
@@ -29,7 +31,7 @@ const Hero = () => {
                     <OutlinedButton borderColor={"#808080"} textColor={"#808080"} text={"David"}/>
                 </div>
 
-                <div style={{display: "flex", flexDirection: "row", gap:"30px"}}>
+                <div className={style.contentContainer}>
                     {
                         Content.map((items, index) => {
                             return (

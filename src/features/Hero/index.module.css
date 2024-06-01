@@ -1,0 +1,52 @@
+
+.mainCont{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.imageContainer{
+    flex: 1;
+    max-width: 50%;
+}
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+}
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .mainCont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textDiv {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .buttonsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
